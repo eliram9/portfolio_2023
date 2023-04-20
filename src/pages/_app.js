@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import NavBar from '@/components/NavBar';
+
 import '@/styles/globals.css';
-import NavBar from '@/components/Navbar';
 
 export default function App({ Component, pageProps }) {
     return (
