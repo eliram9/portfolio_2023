@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import '@/styles/globals.css';
+import NavBar from '@/components/Navbar';
 
 export default function App({ Component, pageProps }) {
     return (
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className='font-dosis bg-light w-full min-h-screen'>
+                <NavBar />
                 <Component {...pageProps} />
             </main>
         </>

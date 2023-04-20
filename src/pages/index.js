@@ -15,7 +15,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head> */}
             <main>
-                This is me!100
+                This is Home
             </main>
         </>
     )
