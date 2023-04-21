@@ -11,7 +11,7 @@ import { GithubIcon, LinkedinIcon } from "./Icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter();
-    console.log(router);
+    // console.log(router);
     return (
         <Link href={href} className={`${className} relative group`}>
             {title}
@@ -71,7 +71,7 @@ const NavBar = () => {
             </nav>
 
             {/* Initials Logo */}
-            <div className="absolute top-2 translate-x-[-50%] left-[50%]">
+            <div className="absolute top-3 translate-x-[-50%] left-[50%] z-20">
                 <Logo />
             </div>
         </header>

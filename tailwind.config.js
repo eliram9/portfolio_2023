@@ -7,6 +7,7 @@ module.exports = {
                 dosis: ["Dosis", "sans-serif"],
             },
             colors: {
+                lightDark: "#5c5e58",
                 dark: "#3d3f3a",
                 light: "#f5f5f5",
                 gold: "#d29829",
