@@ -33,13 +33,13 @@ export default function Home() {
                                 hover:bg-lightDark'
                                 download={true}
                             >
-                                Resume<FileDownload className='w-5 ml-1' />
+                                Resume<FileDownload className='w-5 ml-2' />
                             </Link>
                             <Link href="mailto:eliram9@gmail.com" target={'_blank'}
                                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-xl font-normal tracking-wide ml-3
                                 hover:bg-lightDark'
                             >
-                                Contact<Email className='w-5 ml-2' />
+                                Contact<Email className='w-6 ml-2' />
                             </Link>
                         </div>
                         </div>
