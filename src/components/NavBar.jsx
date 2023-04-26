@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
 import Logo from "./Logo";
-import { GithubIcon, LinkedinIcon } from "./Icons";
+import { GithubIcon, LinkedinIcon, CodepenIcon, AWSIcon } from "./Icons";
 // import { AWSIcon, GithubIcon, LinkedinIcon, CodepenIcon } from "./Icons";
 
 
@@ -39,34 +39,33 @@ const NavBar = () => {
 
             {/* Icons */}
             <nav className="flex items-center justify-center flex-wrap">
-                <motion.a href="/" target={"_blank"}
+                <motion.a href="https://github.com/eliram9" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
                     className="w-6 mr-3"
-
                 >
                     <GithubIcon />
                 </motion.a>
-                <motion.a href="/" target={"_blank"}
+                <motion.a href="https://www.linkedin.com/in/eliram9/" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-6 mx-3"
+                    className="w-7 mx-3"
                 >
-                    <GithubIcon />
+                    <LinkedinIcon />
                 </motion.a>
-                <motion.a href="/" target={"_blank"}
+                <motion.a href="https://codepen.io/eliram9" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-6 mx-3"
+                    className="w-7 mx-3"
                 >
-                    <GithubIcon />
+                    <CodepenIcon />
                 </motion.a>
-                <motion.a href="/" target={"_blank"}
+                <motion.a href="https://www.credly.com/badges/2edd8c97-748e-4800-966d-d788818909df/linked_in?t=rsa6y9" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-6 ml-3"
+                    className="w-7 ml-3"
                 >
-                    <GithubIcon />
+                    <AWSIcon />
                 </motion.a>
             </nav>
 
