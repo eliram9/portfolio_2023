@@ -1,9 +1,14 @@
 import React, { useRef } from 'react';
 import { motion, useScroll } from "framer-motion";
 
+import Dots from './Dots';
+
 
 const Role = ({ position, company, companyLink, period, location, details }) => {
-    return <li className='my-5 first:mt-o last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between '>
+    const ref = useRef(null);
+
+    return <li ref={ ref } className='my-4 first:mt-o last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+                <Dots reference={ ref } />
                 <div>
                     <div className='flex justify-between'>
                         <h3 className='capitalize font-normal text-2xl text-dark'>{position}&nbsp;</h3>
@@ -22,7 +27,7 @@ const Role = ({ position, company, companyLink, period, location, details }) => 
 const Experience = () => { 
     const ref = useRef(null); 
     const { scrollYProgress } = useScroll({ 
-        target: ref,   
+        target: ref,
         offset: ["start end", "center start"]
         }
     )
@@ -33,7 +38,7 @@ const Experience = () => {
 
             <div ref={ref} className='w-[75%] mx-auto relative'>
 
-                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-8 top-5  w-[2px] h-full bg-black origin-top ' />
+                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6  w-[2px] h-full bg-dark origin-top ' />
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <li>
                         <Role position="Front-End & UI Developer" companyLink="https://www.boozallen.com/" 
