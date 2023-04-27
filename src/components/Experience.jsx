@@ -7,7 +7,7 @@ import Dots from './Dots';
 const Role = ({ position, company, companyLink, period, location, details }) => {
     const ref = useRef(null);
 
-    return <li ref={ ref } className='my-4 first:mt-o last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+    return <div ref={ ref } className='my-4 first:mt-o last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
                 <Dots reference={ ref } />
                 <div>
                     <div className='flex justify-between'>
@@ -21,7 +21,7 @@ const Role = ({ position, company, companyLink, period, location, details }) => 
                     </h3>
                     <p className='font-normal w-full pt-4 pb-10'>{details}</p>
                 </div>
-           </li>
+           </div>
 }
  
 const Experience = () => { 
@@ -38,7 +38,7 @@ const Experience = () => {
 
             <div ref={ref} className='w-[75%] mx-auto relative'>
 
-                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6  w-[2px] h-full bg-dark origin-top ' />
+                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6 w-[2px] h-full bg-dark origin-top' />
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <li>
                         <Role position="Front-End & UI Developer" companyLink="https://www.boozallen.com/" 
