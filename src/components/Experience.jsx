@@ -4,12 +4,17 @@ import { motion, useScroll } from "framer-motion";
 import Dots from './Dots';
 
 
+// Component for any role 
 const Role = ({ position, company, companyLink, period, location, details }) => {
     const ref = useRef(null);
 
     return <div ref={ ref } className='my-4 first:mt-o last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
                 <Dots reference={ ref } />
-                <div>
+                <motion.div initial={{ y: 50 }}
+                            whileInView={{ y: 0 }}
+                            transition={{ duration: 0.5, type: "spring" }}
+                
+                >
                     <div className='flex justify-between'>
                         <h3 className='capitalize font-normal text-2xl text-dark'>{position}&nbsp;</h3>
                         <h3 className='capitalize font-normal text-xl bg-dark text-light px-5 py-1 rounded-lg'>{period}</h3>
@@ -20,7 +25,7 @@ const Role = ({ position, company, companyLink, period, location, details }) => 
                             <span className='font-normal'> {location}</span>
                     </h3>
                     <p className='font-normal w-full pt-4 pb-10'>{details}</p>
-                </div>
+                </motion.div>
            </div>
 }
  

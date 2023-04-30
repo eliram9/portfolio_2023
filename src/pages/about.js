@@ -7,6 +7,7 @@ import AminatedText from '@/components/AminatedText';
 import Layout from '@/components/Layout';
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 
 
 const AnimationNumbers = ({ value }) => {
@@ -93,6 +94,7 @@ const about = () => {
                         </div>    
                     </div>
                     <Experience />
+                    <Education />
                 </Layout>
             </main> 
         </>

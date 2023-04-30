@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import Link from "next/link";
 import profilePic from '../../public/images/profile/me-pic-1.webp';
 import AminatedText from '@/components/AminatedText';
 import { FileDownload, Email } from '@/components/Icons';
@@ -31,7 +30,7 @@ export default function Home() {
                         <div className='flex items-center self-start mt-2'>
                             <motion.a href="/Eliram Malachi - Resume.pdf" target={'_blank'}
                                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-xl font-normal tracking-wide mr-3
-                                hover:bg-lightDark'
+                                hover:bg-lightDark shadow-lg shadow-gray-600'
                                 whileHover={{ y: +2 }}
                                 download={true}
                             >
@@ -39,7 +38,7 @@ export default function Home() {
                             </motion.a>
                             <motion.a href="mailto:eliram9@gmail.com" target={'_blank'}
                                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-xl font-normal tracking-wide ml-3
-                                hover:bg-lightDark'
+                                hover:bg-lightDark shadow-lg shadow-gray-600'
                                 whileHover={{ y: +2 }}
                             >
                                 Contact<Email className='w-6 ml-2' />
@@ -52,4 +51,3 @@ export default function Home() {
         </> 
     )
 }
-    
