@@ -31,6 +31,29 @@ const A1 = ({ type, title, summary, img, link, githubLink }) => {
     )
 }
  
+const A2 = ({ type, title, summary, img, link, githubLink }) => {
+    return (
+            <article className='w-full flex flex-col items-center justify-between rounded-3xl bg-light text-dark p-12 relative'>
+                <Link className='w-full cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
+                    <Image src={img} alt={title} className='w-full h-auto' />
+                </Link>
+
+                <div className='w-full flex flex-col items-start justify-between mt-4'>
+                    {/* <span className='text-gold font-medium text-xl'>{type}</span> */}
+                    <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
+                        <h2 className='my-1 w-full text-left text-3xl font-bolds text-gold'>{title}</h2>
+                    </Link>
+
+                    <p className='my-1 font-large'>{summary}</p>
+                    <div className='mt-1 flex items-center'>
+                        <Link href={githubLink} target="_blank" className='border border-solid border-dark rounded-full p-1 mr-2'><GithubIcon /> </Link>  
+                        <Link href={link} target="_blank" className='ml-2 rounded-lg bg-dark text-light p-1 px-6 text-md font-normal'>Live App</Link> 
+                    </div>
+                </div>
+            </article>
+    )
+}
+ 
 const Projects = () => {   
     return ( 
         <>
@@ -56,10 +79,26 @@ const Projects = () => {
                         </div>
 
                         <div className='col-span-6'>
-                            A2
+                            <A2 title="QuickestWay"
+                                summary="My personal Crypto Tracker, single page application using React, CSS, API. 
+                                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+                                        local currency."
+                                img={image}        
+                                link="/"
+                                githubLink="/"  
+                                type="A2" 
+                            />
                         </div>
                         <div className='col-span-6'>
-                            A2
+                        <A2 title="QuickestWay"
+                                summary="My personal Crypto Tracker, single page application using React, CSS, API. 
+                                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+                                        local currency."
+                                img={image}        
+                                link="/"
+                                githubLink="/"  
+                                type="A2" 
+                            />
                         </div>
 
                         <div className='col-span-12'>

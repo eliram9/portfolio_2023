@@ -39,7 +39,7 @@ const Education = () => {
 
     return (  
         <div className='my-64'>  
-            <h2 className='font-bold text-8xl mb-32 w-full text-center'>Education</h2> 
+            <h2 className='font-bold text-8xl mb-32 w-full text-center text-dark'>Education</h2> 
 
             <div ref={ref} className='w-[75%] mx-auto relative'>
                 <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6 w-[2px] h-full bg-dark origin-top' />
