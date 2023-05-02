@@ -1,9 +1,9 @@
 import React from 'react'
 
 const AminatedText = ({ text, className="" }) => {
-  return (
-    <div className="w-full mx-auto py-3 flex items-center justify-center text-center" >
-        <h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl ${className}`}>
+  return ( 
+    <div className="w-full mx-auto py-3 flex items-center justify-center text-center dark:text-light">
+        <h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl dark:text-light ${className}`}>
             {
                 text.split(" ").map((word, index) => 
                     <span key={word+"-"+index} className='inline-block'>
@@ -16,4 +16,4 @@ const AminatedText = ({ text, className="" }) => {
   )
 }
 
-export default AminatedText
+export default AminatedText 

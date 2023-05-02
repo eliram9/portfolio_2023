@@ -17,7 +17,7 @@ const CustomLink = ({ href, title, className = "" }) => {
             {title}
             <span className={`absolute h-[1px] inline-block bg-dark left-0 -bottom-0.5
                             group-hover:w-full transition-[width] ease duration-300"
-                            ${router.asPath === href ? "w-full" : "w-0"}`}
+                            ${router.asPath === href ? "w-full" : "w-0"} dark:bg-light`}
             >
                 &nbsp;
             </span>
@@ -30,7 +30,7 @@ const NavBar = () => {
     const [mode, setMode] = useThemeSwitcher();
 
     return (  
-        <header className="w-full text-dark px-32 py-5 flex items-center justify-between">
+        <header className="w-full text-dark px-32 py-5 flex items-center justify-between dark:text-light">
 
             {/* Links */}
            <nav>
@@ -47,26 +47,26 @@ const NavBar = () => {
                     whileTap={{ scale: 0.9 }}
                     className="w-6 mr-3"
                 >
-                    <GithubIcon />
+                    <GithubIcon className="fill-dark dark:fill-light" />
                 </motion.a>
                 <motion.a href="https://www.linkedin.com/in/eliram9/" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-7 mx-3"
+                    className="w-6 mx-3" 
                 >
-                    <LinkedinIcon />
+                    <LinkedinIcon className="stroke-dark dark:stroke-light" />
                 </motion.a>
                 <motion.a href="https://codepen.io/eliram9" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-7 mx-3"
+                    className="w-6 mx-3"
                 >
-                    <CodepenIcon />
+                    <CodepenIcon className="fill-dark dark:fill-light" />
                 </motion.a>
                 <motion.a href="https://www.credly.com/badges/2edd8c97-748e-4800-966d-d788818909df/linked_in?t=rsa6y9" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-7 ml-3"
+                    className="w-7 ml-3 fill-dark dark:fill-light"
                 >
                     <AWSIcon />
                 </motion.a>
@@ -74,9 +74,9 @@ const NavBar = () => {
                 <button onClick={() => setMode(mode === "light" ? "dark" : "light")} className="ml-6 flex items-center justify-center rounded-full">
                     {mode === "dark" 
                         ? 
-                        <DarkModeIcon className={"fill-dark"} />
+                        <DarkModeIcon />
                         :
-                        <LightModeIcon className={"fill-dark"} />
+                        <LightModeIcon />
                     } 
                 </button>
             </nav>

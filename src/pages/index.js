@@ -22,7 +22,7 @@ export default function Home() {
                         <div className='w-1/2 flex flex-col itens-center self-center'>
                             <AminatedText className='!text-7xl !text-left' text="Turning Vision Into Reality With Code And Design" />
                             <h1></h1>
-                            <p className='text-xl subpixel-antialiased my-4 font-light tracking-wide'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
+                            <p className='text-xl subpixel-antialiased my-4 font-light tracking-wide dark:text-light'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
                                Explore my latest projects and articles, showcasing my expertise in React.js and web development.
                             </p>
 
@@ -30,7 +30,7 @@ export default function Home() {
                         <div className='flex items-center self-start mt-2'>
                             <motion.a href="/Eliram Malachi - Resume.pdf" target={'_blank'}
                                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-xl font-normal tracking-wide mr-3
-                                hover:bg-lightDark shadow-lg shadow-gray-600'
+                                hover:bg-lightDark shadow-lg shadow-gray-600 dark:border border-solid dark:shadow-none'
                                 whileHover={{ y: +2 }}
                                 download={true}
                             >
@@ -38,7 +38,7 @@ export default function Home() {
                             </motion.a>
                             <motion.a href="mailto:eliram9@gmail.com" target={'_blank'}
                                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-xl font-normal tracking-wide ml-3
-                                hover:bg-lightDark shadow-lg shadow-gray-600'
+                                hover:bg-lightDark shadow-lg shadow-gray-600 dark:border border-solid dark:shadow-none'
                                 whileHover={{ y: +2 }}
                             >
                                 Contact<Email className='w-6 ml-2' />
