@@ -3,10 +3,10 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
 import Logo from "./Logo";
-import { GithubIcon, LinkedinIcon, CodepenIcon, AWSIcon } from "./Icons";
-// import { AWSIcon, GithubIcon, LinkedinIcon, CodepenIcon } from "./Icons";
+import { GithubIcon, LinkedinIcon, CodepenIcon, AWSIcon, DarkModeIcon, LightModeIcon } from "./Icons";
 
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -26,8 +26,11 @@ const CustomLink = ({ href, title, className = "" }) => {
 }
 
 const NavBar = () => {
+    // night mode or light mode
+    const [mode, setMode] = useThemeSwitcher();
+
     return (  
-        <header className="w-full text-dark px-32 py-5  flex items-center justify-between">
+        <header className="w-full text-dark px-32 py-5 flex items-center justify-between">
 
             {/* Links */}
            <nav>
@@ -67,6 +70,15 @@ const NavBar = () => {
                 >
                     <AWSIcon />
                 </motion.a>
+
+                <button onClick={() => setMode(mode === "light" ? "dark" : "light")} className="ml-6 flex items-center justify-center rounded-full">
+                    {mode === "dark" 
+                        ? 
+                        <DarkModeIcon className={"fill-dark"} />
+                        :
+                        <LightModeIcon className={"fill-dark"} />
+                    } 
+                </button>
             </nav>
 
             {/* Initials Logo */}
