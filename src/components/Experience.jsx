@@ -16,8 +16,8 @@ const Role = ({ position, company, companyLink, period, location, details }) => 
                 
                 >
                     <div className='flex justify-between'>
-                        <h3 className='capitalize font-normal text-2xl text-dark'>{position}&nbsp;</h3>
-                        <h3 className='capitalize font-normal text-xl bg-dark text-light px-5 py-1 rounded-lg'>{period}</h3>
+                        <h3 className='capitalize font-normal text-2xl text-dark  dark:text-light'>{position}&nbsp;</h3>
+                        <h3 className='capitalize font-normal text-xl bg-dark text-light px-5 py-1 rounded-lg dark:border border-solid'>{period}</h3>
                     </div>
                     <h3 className='font-semibold text-lg'>
                         <a href={companyLink}>{company}</a>
@@ -39,11 +39,11 @@ const Experience = () => {
 
     return (  
         <div className='my-64'>  
-            <h2 className='font-bold text-8xl mb-32 w-full text-center text-dark'>Experience</h2> 
+            <h2 className='font-bold text-8xl mb-32 w-full text-center text-dark dark:text-light'>Experience</h2> 
 
             <div ref={ref} className='w-[75%] mx-auto relative'>
 
-                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6 w-[2px] h-full bg-dark origin-top' />
+                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6 w-[2px] h-full bg-dark origin-top dark:bg-light' />
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <li>
                         <Role position="Front-End & UI Developer" companyLink="https://www.boozallen.com/" 

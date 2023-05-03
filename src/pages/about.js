@@ -31,7 +31,7 @@ const AnimationNumbers = ({ value }) => {
         }) 
     },[springValue, value])
     
-    
+     
     return <span ref={ ref }></span> 
 }
 
@@ -43,21 +43,21 @@ const about = () => {
                 <meta name='description' content='any description' />
             </Head>
 
-            <main className='flex w-full flex-col items-center justify-center'>
+            <main className='flex w-full flex-col items-center justify-center dark:text-light'>
                 <Layout className="pt-16">
                     <AminatedText text='Passion Fuels Purpose!' className='mb-16'/>
                     {/* text */}
-                    <div className='grid w-full grid-cols-8 gap-16'>
+                    <div className='grid w-full grid-cols-8 gap-16 dark:text-light'>
                         <div className='col-span-3 flex flex-col items-start justify-start'>
-                            <h2 className='mb-4 text-2xl font-smibold uppercase text-lightDark'>Biography</h2>
-                            <p className='text-dark font-medium text-lg tracking-wide'>Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
+                            <h2 className='mb-4 text-2xl font-smibold uppercase text-lightDark dark:text-light'>Biography</h2>
+                            <p className='text-dark font-medium text-lg tracking-wide dark:text-light'>Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
                                and user-centered digital experiences. With 4 years of experience in the field. I am always looking for 
                                new and innovative ways to bring my clients' visions to life.
                             </p>   
-                            <p className='text-dark font-medium text-lg my-4 tracking-wide'> I believe that design is about more than just making things look pretty – it's about solving problems and 
+                            <p className='text-dark font-medium text-lg my-4 tracking-wide dark:text-light'> I believe that design is about more than just making things look pretty – it's about solving problems and 
                                creating intuitive, enjoyable experiences for users.
                             </p>  
-                            <p className='text-dark font-medium text-lg mt-4 tracking-wide'>Whether I'm working on a website, mobile app, or 
+                            <p className='text-dark font-medium text-lg mt-4 tracking-wide dark:text-light'>Whether I'm working on a website, mobile app, or 
                                other digital product, I bring my commitment to design excellence and user-centered thinking to 
                                every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
                             </p>

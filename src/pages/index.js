@@ -17,7 +17,7 @@ export default function Home() {
                 <Layout className='pt-0'>
                     <div className='flex items-center justify-between w-full'>
                         <div className='w-[35%]'>
-                            <Image src={profilePic} alt='eliram9' className='w-full h-auto' />
+                            <Image src={profilePic} alt='eliram9' className='w-full h-auto' priority />
                         </div>
                         <div className='w-1/2 flex flex-col itens-center self-center'>
                             <AminatedText className='!text-7xl !text-left' text="Turning Vision Into Reality With Code And Design" />

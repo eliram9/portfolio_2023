@@ -10,7 +10,7 @@ import image from '../../public/images/projects/crypto-tracker.png'
 
 const A1 = ({ type, title, summary, img, link, githubLink }) => {
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl bg-light text-dark p-12'>
+        <article className='w-full flex items-center justify-between rounded-3xl bg-light text-dark p-12 dark:bg-dark'>
             <Link className='w-1/2 cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
                 <Image src={img} alt={title} className='w-full h-auto' />
             </Link>
@@ -21,10 +21,14 @@ const A1 = ({ type, title, summary, img, link, githubLink }) => {
                     <h2 className='my-2 w-full text-left text-4xl font-bolds text-gold'>{title}</h2>
                 </Link>
 
-                <p className='my-2 font-large'>{summary}</p>
+                <p className='my-2 font-large dark:text-light'>{summary}</p>
                 <div className='mt-2 flex items-center'>
-                    <Link href={githubLink} target="_blank" className='border border-solid border-dark rounded-full p-1.5 mr-2'><GithubIcon /> </Link>  
-                    <Link href={link} target="_blank" className='ml-2 rounded-lg bg-dark text-light p-1 px-6 text-lg font-normal'>Live App</Link> 
+                    <Link href={githubLink} target="_blank" className='border border-solid border-dark rounded-full p-1.5 mr-2 dark:border-light'>
+                        <GithubIcon className="fill-dark dark:fill-light" /> 
+                    </Link>  
+                    <Link href={link} target="_blank" className='ml-2 rounded-lg bg-dark text-light p-1 px-6 text-lg font-normal dark:border border-solid'>
+                        Live App
+                    </Link> 
                 </div>
             </div>
         </article>
@@ -33,7 +37,7 @@ const A1 = ({ type, title, summary, img, link, githubLink }) => {
  
 const A2 = ({ type, title, summary, img, link, githubLink }) => {
     return (
-            <article className='w-full flex flex-col items-center justify-between rounded-3xl bg-light text-dark p-12 relative'>
+            <article className='w-full flex flex-col items-center justify-between rounded-3xl bg-light text-dark p-12 relative dark:bg-dark'>
                 <Link className='w-full cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
                     <Image src={img} alt={title} className='w-full h-auto' />
                 </Link>
@@ -44,10 +48,14 @@ const A2 = ({ type, title, summary, img, link, githubLink }) => {
                         <h2 className='my-1 w-full text-left text-3xl font-bolds text-gold'>{title}</h2>
                     </Link>
 
-                    <p className='my-1 font-large'>{summary}</p>
+                    <p className='my-1 font-large dark:text-light'>{summary}</p>
                     <div className='mt-1 flex items-center'>
-                        <Link href={githubLink} target="_blank" className='border border-solid border-dark rounded-full p-1 mr-2'><GithubIcon /> </Link>  
-                        <Link href={link} target="_blank" className='ml-2 rounded-lg bg-dark text-light p-1 px-6 text-md font-normal'>Live App</Link> 
+                        <Link href={githubLink} target="_blank" className='border border-solid border-dark rounded-full p-1 mr-2 dark:border-light'>
+                            <GithubIcon className="fill-dark dark:fill-light"/>
+                        </Link>  
+                        <Link href={link} target="_blank" className='ml-2 rounded-lg bg-dark text-light p-1 px-6 text-md font-normal dark:border border-solid'>
+                            Live App
+                        </Link> 
                     </div>
                 </div>
             </article>
