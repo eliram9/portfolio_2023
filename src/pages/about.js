@@ -8,6 +8,7 @@ import Layout from '@/components/Layout';
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
+import Skills from '@/components/Skills';
 
 
 const AnimationNumbers = ({ value }) => {
@@ -45,10 +46,10 @@ const about = () => {
 
             <main className='flex w-full flex-col items-center justify-center dark:text-light'>
                 <Layout className="pt-16">
-                    <AminatedText text='Passion Fuels Purpose!' className='mb-16'/>
+                    <AminatedText text='Passion Fuels Purpose!' className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl' />
                     {/* text */}
-                    <div className='grid w-full grid-cols-8 gap-16 dark:text-light'>
-                        <div className='col-span-3 flex flex-col items-start justify-start'>
+                    <div className='grid w-full grid-cols-8 gap-16 dark:text-light sm:gap-8'>
+                        <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4'>
                             <h2 className='mb-4 text-2xl font-smibold uppercase text-lightDark dark:text-light'>Biography</h2>
                             <p className='text-dark font-medium text-lg tracking-wide dark:text-light'>Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
                                and user-centered digital experiences. With 4 years of experience in the field. I am always looking for 
@@ -66,7 +67,8 @@ const about = () => {
                         {/* image */}
                         <div className='col-span-2 relative h-max p-3'>
                             <div className='absolute top-0 -right-3 -z-10 w-[103%]'>
-                                <Image src={profilePic} alt='Eliram Malachi' className='w-full h-auto rounded-2xl' />   
+                                {/* <Image src={profilePic} alt='Eliram Malachi' className='w-full h-auto rounded-2xl' />    */}
+                                {/* <AnaliticBrain /> */}
                             </div>
                         </div>
 
@@ -93,6 +95,7 @@ const about = () => {
                             </div>
                         </div>    
                     </div>
+                    <Skills />
                     <Experience />
                     <Education />
                 </Layout>

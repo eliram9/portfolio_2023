@@ -8,23 +8,34 @@ import Dots from './Dots';
 const Role = ({ degree, school, schoolLink, period, location, details }) => {
     const ref = useRef(null);
 
-    return <div ref={ ref } className='my-4 first:mt-o last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+    return <div ref={ ref } className='my-4 first:mt-o last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between xs:w-[90%] sm:w-[80%] xl:w-[75%]'>
                 <Dots reference={ ref } />
                 <motion.div initial={{ y: 50 }}
                             whileInView={{ y: 0 }}
                             transition={{ duration: 0.5, type: "spring" }}
                 
                 >
-                    <div className='flex justify-between'>
-                        <h3 className='capitalize font-normal text-2xl text-dark dark:text-light'>{degree}&nbsp;</h3>
-                        <h3 className='capitalize font-normal text-xl bg-dark text-light px-5 py-1 rounded-lg dark: border border-solid'>{period}</h3>
+                    <div className='justify-between'>
+                        <h3 className='capitalize font-normal text-2xl text-dark  dark:text-light sm:text-xl xs:text-[16px]'>{degree}&nbsp;</h3>
+                        {/* <h3 className='capitalize font-normal text-xl bg-dark text-light px-4 p-1 rounded-lg dark:border border-solid 
+                                       xs:text-[12px] xs:py-1 xs:px-2 
+                                       md:px-2 md:p-1 md:text-sm xs: flex flex-col'
+                        >
+                            {period}
+                        </h3> */}
                     </div>
-                    <h3 className='font-semibold text-lg'>
+                    <h3 className='font-semibold text-lg md:text-sm'>
                         <a href={schoolLink}>{school}</a>
                             <span className='text-gold font-normal'> |</span>
                             <span className='font-normal'> {location}</span>
                     </h3>
-                    <p className='font-normal w-full pt-4 pb-10'>{details}</p>
+                    <h3 className='capitalize font-normal text-xl bg-dark text-light px-4 p-1 rounded-lg dark:border border-solid mt-4
+                                       xs:text-[12px] xs:py-1 xs:px-2 
+                                       md:px-2 md:p-1 md:text-sm w-fit'
+                        >
+                            {period}
+                        </h3>
+                    <p className='font-normal w-full pt-4 pb-10 xs:text-[14px]'>{details}</p>
                 </motion.div>
            </div>
 }
@@ -38,11 +49,11 @@ const Education = () => {
     )
 
     return (  
-        <div className='my-64'>  
-            <h2 className='font-bold text-8xl mb-32 w-full text-center text-dark  dark:text-light'>Education</h2> 
+        <div className='my-32'>  
+            <h2 className='font-bold text-8xl mb-32 w-full text-center text-dark dark:text-light md:mb-16 md:text-6xl xs:text-4xl'>Education</h2> 
 
-            <div ref={ref} className='w-[75%] mx-auto relative'>
-                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6 w-[2px] h-full bg-dark origin-top dark:bg-light' />
+            <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-[95%]'>
+                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6 w-[2px] h-[125%] lg:h-[135%] bg-dark origin-top dark:bg-light md:left-[30px] xs:left-[22px]' />
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <li>
                         <Role degree="Certificate - full stack Web Developer" schoolLink="https://www.boozallen.com/" 

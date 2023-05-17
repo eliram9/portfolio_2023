@@ -6,9 +6,9 @@ const MotionLink = motion(Link);
 
 const Logo = () => {
   return (
-    <div className='flex items-center justify-between mt-2 text-2xl font-medium'>
-        <MotionLink href="/" className='w-16 h-16 bg-dark text-gold flex items-center justify-center rounded-full 
-                                       dark:border border-solid border-light'
+    <div className='flex items-center justify-between mt-4 text-2xl font-medium xs:mt-4 xs:text-lg'>
+        <MotionLink href="/" className='w-14 h-14 bg-dark text-gold flex items-center justify-center rounded-full 
+                                       dark:border border-solid border-light xs:w-12 xs:h-12 md:w-13 md:h-13'
         initial={{
             rotate: 0,
         }}
