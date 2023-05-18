@@ -9,6 +9,7 @@ import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import Skills from '@/components/Skills';
+import TransitionEffect from '@/components/TransitionEffect';
 
 
 const AnimationNumbers = ({ value }) => {
@@ -43,6 +44,8 @@ const about = () => {
                 <title>eliram9 | About</title>
                 <meta name='description' content='any description' />
             </Head>
+
+            <TransitionEffect />
 
             <main className='flex w-full flex-col items-center justify-center dark:text-light'>
                 <Layout className="pt-16">

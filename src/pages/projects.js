@@ -4,9 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import Layout from '@/components/Layout';
+import TransitionEffect from '../components/TransitionEffect';
 import AminatedText from '@/components/AminatedText';
 import { GithubIcon } from '@/components/Icons';
-import image from '../../public/images/projects/crypto-tracker.png'
+import image from '../../public/images/projects/crypto-tracker.png';
 
 const A1 = ({ type, title, summary, img, link, githubLink }) => {
     return (
@@ -71,6 +72,9 @@ const Projects = () => {
                 <title>eliram9 | Projects</title>
                 <meta name='description' content='any description' />
             </Head>
+
+            <TransitionEffect />
+
             <main className='w-full mb-16 flex flex-col items-center justify-center'>
                 <Layout className='pt-16'>
                     <AminatedText text='Exploring Self Horizons!' className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl' />
