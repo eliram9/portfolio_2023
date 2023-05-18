@@ -260,7 +260,7 @@ export const ReactIcon = ({ className="", ...rest }) => (
 export const AnaliticalBrain = ({ className="", ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1 555"
+    viewBox="-100 -70 80 650"
     fill="none"
     stroke="none"
     width={20}
@@ -397,7 +397,7 @@ export const CreativeBrain = ({ className="", ...rest }) => (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     data-name="brain1 + Layer 2\xA0Image"
-    viewBox="0 0 470 560"
+    viewBox="0 -70 600 660"
     width={1}
     height={1}
     className={`w-full h-auto ${className}`}
