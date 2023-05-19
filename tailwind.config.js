@@ -10,7 +10,8 @@ module.exports = {
             colors: {
                 lightDark: "#5c5e58",
                 dark: "#3d3f3a",
-                light: "#f5f5f5",
+                light: "#f5f5f5", 
+                gray: "#E7E5E4",
                 gold: "#d29829",
                 primary: "#B63E96", // 240,86,199
                 primaryDark: "#58E6D9", // 80,230,217
