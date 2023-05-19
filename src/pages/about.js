@@ -5,7 +5,6 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion';
 
 import AminatedText from '@/components/AminatedText';
 import Layout from '@/components/Layout';
-import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import Skills from '@/components/Skills';
