@@ -38,7 +38,7 @@ const Footer = () => {
     return (
         <footer className="w-full border-t-[1px] border-solid border-black/30 text-md text-dark dark:text-light dark:border-light relative">
             {/* <div className="absolute w-48 h-24 rounded-tl-full rounded-tr-full bg-rose-500"></div> */}
-            <button className={`absolute h-[24px] w-[48px] m-auto left-0 bottom-[100%] right-0 p-3 rounded-tl-full rounded-tr-full
+            <button className={`absolute h-[24px] w-[48px] m-auto left-0 bottom-[100%] right-0 p-2 rounded-tl-full rounded-tr-full
                              bg-gray border-solid border-t-[1px] border-l-[1px] border-r-[1px] border-black/30
                              dark:bg-dark dark:border-light ${isVisible ? 'visible' : ''}`}
                     onClick={goUpBotton}
@@ -46,7 +46,7 @@ const Footer = () => {
             >
                     <GoUp fill="#3d3f3a" className='dark:fill-white hover:fill-gold dark:hover:fill-gold' />
                 </button>
-            <Layout className='py-6 flex items-center justify-center xl:py-5 lg:py-3 lg:text-sm md:py-4 sm:py-3 xs:py-1 bg-gray'>
+            <Layout className='py-4 flex items-center justify-center xl:py-5 lg:py-3 lg:text-sm md:py-4 sm:py-3 xs:py-1 bg-gray'>
                 <p className="xs:text-[10px]">{new Date().getFullYear()} &copy; All Rights Reserved 
                     <span className='text-gold text-xl xs:text-[10px]'> &#8857;</span> 
                 </p>

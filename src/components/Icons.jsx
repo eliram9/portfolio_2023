@@ -237,17 +237,18 @@ export const Email = ({ className="", ...rest }) => (
 
 // Footer arrow up
 export const GoUp = ({ className="", ...rest }) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlSpace="preserve"
-      width={25}
-      height={25}
-      strokeWidth={5.11735}
-      viewBox="0 120 511.735 511.735"
-      className={`w-full h-auto ${className}`}
-      {...rest}
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       viewBox="-1.5 -4 23 20" 
+       className={`w-full h-auto ${className}`}
+        {...rest}
   >
-    <path d="M508.788 371.087 263.455 125.753a10.623 10.623 0 0 0-15.04 0L2.975 371.087c-4.053 4.267-3.947 10.987.213 15.04a10.763 10.763 0 0 0 14.827 0l237.867-237.76 237.76 237.76c4.267 4.053 10.987 3.947 15.04-.213a10.663 10.663 0 0 0 .106-14.827z" />
+    <title>{"arrow_up []"}</title>
+    
+    <path
+      fill=""
+      fillRule="evenodd"
+      d="M19.708 10.634c.39-.405.39-1.06 0-1.464L11.444.607a1.95 1.95 0 0 0-2.827 0L.292 9.232c-.385.4-.39 1.048-.01 1.454a.976.976 0 0 0 1.425.01l7.617-7.893a.975.975 0 0 1 1.414 0l7.557 7.83a.974.974 0 0 0 1.413 0"
+    />
   </svg>
 )
 
