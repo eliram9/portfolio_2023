@@ -46,7 +46,7 @@ const Experience = () => {
 
             <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-[95%]'>
 
-                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6 w-[2px] h-[95%] bg-dark origin-top dark:bg-light md:left-[30px] xs:left-[22px]' />
+                <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-6 w-[2px] h-[95%] bg-dark origin-top dark:bg-light md:left-[30px] xs:left-[22px] shadow-xl shadow-rlight' />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-6'>
                     <li>
                         <Role position="Front-End & UI Developer" companyLink="https://www.boozallen.com/" 
