@@ -53,7 +53,6 @@ const useThemeSwitcher = () => {
         }
     }, [mode])
     
-
     return [mode, setMode]
 }
 

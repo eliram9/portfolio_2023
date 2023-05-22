@@ -41,8 +41,7 @@ const Footer = () => {
             <button className={`absolute h-[24px] w-[48px] m-auto left-0 bottom-[100%] right-0 p-2 rounded-tl-full rounded-tr-full
                              bg-gray border-solid border-t-[1px] border-l-[1px] border-r-[1px] border-black/30
                              dark:bg-dark dark:border-light ${isVisible ? 'visible' : ''}`}
-                    onClick={goUpBotton}
-                    
+                    onClick={goUpBotton}                
             >
                     <GoUp fill="#3d3f3a" className='dark:fill-white hover:fill-gold dark:hover:fill-gold' />
                 </button>

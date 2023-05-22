@@ -1,12 +1,28 @@
-import React from 'react'
+import React, {useRef, useState} from 'react';
+import emailjs from '@emailjs/browser'
 
 export const ContactForm = () => {
+    const ref = useRef();
+    const [success, setSuccess] = useState(null);
+
+    const handleSubmit = (evt) => {
+        evt.preventDefault();
+        emailjs.sendForm('service_t1pk129', 'template_oltxyl8', ref.current, 'Y8h2xOyeP4_WkzBgD')
+            .then((result) => {
+                console.log(result.text);
+                setSuccess(true);
+            }, (error) => {
+                console.log(error.text);
+                setSuccess(false);
+            });  
+    };
+
     return (
         <div className='mt-32 mb-32'>  
             <h2 className='font-bold text-8xl w-full text-center text-dark dark:text-light md:mb-16 md:text-6xl xs:text-4xl'>Stay In Touch</h2> 
             
             <div className="relative flex flex-col justify-center mt-32 overflow-hidden text-dark dark:text-light">
-                <form className='px-[35%] xs:px-[10%] md:px-[20%] xl:px-[28%] items-center'>
+                <form className='px-[35%] xs:px-[10%] md:px-[20%] xl:px-[28%] items-center' onSubmit={handleSubmit} ref={ref}>
                     <div className="mb-6">
                         <label>
                             <span className="">Full Name</span>
@@ -30,7 +46,7 @@ export const ContactForm = () => {
                     </div>
                     <div className="mb-6">
                         <label>
-                            <span class="text-gray-700">Message</span>
+                            <span className="text-gray-700">Message</span>
                         <textarea name="message" rows="3"
                                 className="block w-full mt-2 px-2 py-3 rounded-md shadow-md
                                         focus:border-black/30 focus:ring
@@ -39,13 +55,14 @@ export const ContactForm = () => {
                         </textarea>
                         </label>
                     </div>
-                    <div class="mb-6">
+                    <div className="mb-6">
                         <button type="submit" className="w-full h-10 px-5 text-light bg-dark rounded-lg transition-colors duration-150
                                     focus:shadow-outline hover:bg-lightDark dark:bg-lightDark items-center"
                         >
                             Send Message
                         </button>
                     </div>
+                    {success && "sent successfuly"}
                 </form>
             </div>
         </div>
