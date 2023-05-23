@@ -18,10 +18,10 @@ export const ContactForm = () => {
     };
 
     return (
-        <div className='mt-32 mb-32'>  
+        <div className='my-32'>  
             <h2 className='font-bold text-8xl w-full text-center text-dark dark:text-light md:mb-16 md:text-6xl xs:text-4xl'>Stay In Touch</h2> 
             
-            <div className="relative flex flex-col justify-center mt-32 overflow-hidden text-dark dark:text-light">
+            <div className="relative flex flex-col justify-center mt-32 md:mt-2 overflow-hidden text-dark dark:text-light">
                 <form className='px-[35%] xs:px-[10%] md:px-[20%] xl:px-[28%] items-center' onSubmit={handleSubmit} ref={ref}>
                     <div className="mb-6">
                         <label>
@@ -62,6 +62,7 @@ export const ContactForm = () => {
                             Send Message
                         </button>
                     </div>
+                    {/* create a nicer components for email feedback */}
                     {success && "sent successfuly"}
                 </form>
             </div>

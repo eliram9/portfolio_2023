@@ -238,7 +238,7 @@ export const Email = ({ className="", ...rest }) => (
 // Footer arrow up
 export const GoUp = ({ className="", ...rest }) => (
   <svg xmlns="http://www.w3.org/2000/svg" 
-       viewBox="-1.5 -4 23 20" 
+       viewBox="-1.5 0 23 20" 
        className={`w-full h-auto ${className}`}
         {...rest}
   >
