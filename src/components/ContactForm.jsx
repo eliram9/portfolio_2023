@@ -26,7 +26,8 @@ export const ContactForm = () => {
                 <form className='px-[35%] xs:px-[10%] md:px-[20%] xl:px-[28%] items-center' onSubmit={handleSubmit} ref={ref}>
                     <div className="mb-6">
                         <label>
-                            <span className="">Full Name</span>
+                            <span className='text-gold'>*</span>
+                            Full Name
                             <input type="text" name="name" required
                                 placeholder="John Smith"
                                 className="w-full block px-2 py-2 mt-2 rounded-md shadow-md focus:border-black/30 focus:ring
@@ -36,24 +37,26 @@ export const ContactForm = () => {
                     </div>
                     <div className="mb-6">
                         <label>
-                            <span className="text-gray-700">Email address</span>
-                            <input name="email" type="email" required
-                                placeholder="sjohn@example.com" 
-                                className="block w-full mt-2 px-2 py-2 border-gray-300 rounded-md shadow-md
-                                            focus:border-black/30 focus:ring
-                                            focus:ring-gray focus:ring-opacity-50"
-                            />
-                        </label>
+                            <span className='text-gold'>*</span>
+                                Email Address
+                                <input name="email" type="email" required
+                                    placeholder="sjohn@example.com" 
+                                    className="block w-full mt-2 px-2 py-2 border-gray-300 rounded-md shadow-md
+                                                focus:border-black/30 focus:ring
+                                                focus:ring-gray focus:ring-opacity-50"
+                                />
+                            </label>
                     </div>
                     <div className="mb-6">
                         <label>
-                            <span className="text-gray-700">Message</span>
-                        <textarea name="message" rows="3"
-                                className="block w-full mt-2 px-2 py-3 rounded-md shadow-md
-                                        focus:border-black/30 focus:ring
-                                        focus:ring-gray focus:ring-opacity-50"
-                        >
-                        </textarea>
+                            Message
+                            <textarea name="message" rows="3"
+                                    placeholder="Your message"
+                                    className="block w-full mt-2 px-2 py-3 rounded-md shadow-md
+                                            focus:border-black/30 focus:ring
+                                            focus:ring-gray focus:ring-opacity-50"
+                            >
+                            </textarea>
                         </label>
                     </div>
                     <div className="mb-6">
