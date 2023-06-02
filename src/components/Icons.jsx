@@ -430,6 +430,21 @@ export const CreativeBrain = ({ className="", ...rest }) => (
   </svg>
 )
 
+// Email sent file download
+export const SuccessIcon = ({ className="", ...rest }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlSpace="preserve"
+        width={25}
+        height={25}
+        viewBox="0 0 512 512"
+        className={`w-full h-auto ${className}`}
+        {...rest}
+    >
+    <path d="M256 0C114.837 0 0 114.843 0 256s114.837 256 256 256 256-114.843 256-256S397.163 0 256 0zm120.239 227.501-118.891 118.89c-13.043 13.043-34.174 13.044-47.218 0l-68.804-68.804c-13.044-13.038-13.044-34.179 0-47.218 13.044-13.044 34.174-13.044 47.218 0l45.195 45.19 95.282-95.278c13.044-13.044 34.174-13.044 47.218 0 13.044 13.04 13.044 34.181 0 47.22z" />
+  </svg>
+)
+
 
 
 

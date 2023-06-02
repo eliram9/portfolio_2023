@@ -1,9 +1,10 @@
-import React, {useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
+import Alerts from './Alerts';
 
 export const ContactForm = () => {
     const ref = useRef();
-    const [success, setSuccess] = useState(null);
+    const [success, setSuccess] = useState(false);
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -63,7 +64,7 @@ export const ContactForm = () => {
                         </button>
                     </div>
                     {/* create a nicer components for email feedback */}
-                    {success && "sent successfuly"}
+                    {success ? <Alerts message="Sent successfuly!" status={success} /> : null}
                 </form>
             </div>
         </div>
