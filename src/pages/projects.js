@@ -40,28 +40,28 @@ const A1 = ({ type, title, summary, img, link, githubLink }) => {
  
 const A2 = ({ type, title, summary, img, link, githubLink }) => {
     return (
-            <article className='w-full flex flex-col items-center justify-between rounded-3xl bg-light text-dark p-12 relative dark:bg-dark'>
-                <Link className='w-full cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
-                    <Image src={img} alt={title} className='w-full h-auto' /> 
+        <article className='w-full flex flex-col items-center justify-between rounded-3xl bg-light text-dark p-12 relative dark:bg-dark'>
+            <Link className='w-full cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
+                <Image src={img} alt={title} className='w-full h-auto' /> 
+            </Link>
+
+            <div className='w-full flex flex-col items-start justify-between mt-4 lg:w-full lg:p-0 lg:pt-6'>
+                {/* <span className='text-gold font-medium text-xl'>{type}</span> */}
+                <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
+                    <h2 className='my-1 w-full text-left text-3xl font-bolds text-gold sm:text-[16px]'>{title}</h2>
                 </Link>
 
-                <div className='w-full flex flex-col items-start justify-between mt-4 lg:w-full lg:p-0 lg:pt-6'>
-                    {/* <span className='text-gold font-medium text-xl'>{type}</span> */}
-                    <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
-                        <h2 className='my-1 w-full text-left text-3xl font-bolds text-gold sm:text-[16px]'>{title}</h2>
-                    </Link>
-
-                    <p className='my-1 font-large dark:text-light lg:text-sm'>{summary}</p>
-                    <div className='mt-1 flex items-center'>
-                        <Link href={githubLink} target="_blank" className='border border-solid border-dark rounded-full p-1 mr-2 dark:border-light'>
-                            <GithubIcon className="fill-dark dark:fill-light"/>
-                        </Link>  
-                        <Link href={link} target="_blank" className='ml-2 rounded-lg bg-dark text-light p-1 px-6 text-md font-normal dark:border border-solid lg:text-sm lg:px-4'>
-                            Live App
-                        </Link> 
-                    </div>
+                <p className='my-1 font-large dark:text-light lg:text-sm'>{summary}</p>
+                <div className='mt-1 flex items-center'>
+                    <Link href={githubLink} target="_blank" className='border border-solid border-dark rounded-full p-1 mr-2 dark:border-light'>
+                        <GithubIcon className="fill-dark dark:fill-light"/>
+                    </Link>  
+                    <Link href={link} target="_blank" className='ml-2 rounded-lg bg-dark text-light p-1 px-6 text-md font-normal dark:border border-solid lg:text-sm lg:px-4'>
+                        Live App
+                    </Link> 
                 </div>
-            </article>
+            </div>
+        </article>
     )
 }
  
